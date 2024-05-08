@@ -1,0 +1,289 @@
+:root {
+  --blue: #2c2546;
+  --dark-blue: #1b1535;
+  --green: #00eb09;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+header {
+  text-align: center;
+  background-color: var(--blue);
+  position: fixed;
+  width: 100%;
+  padding: 2%;
+  font-weight: bold;
+  top: 0;
+  font-family: 'Poppins';
+
+  align-items: center;
+  font-size: 15pt;
+  justify-content: center;
+}
+
+.title {
+  color: var(--green);
+  font-size: 15pt;
+  border-bottom: 1px solid var(--white);
+  text-decoration: none;
+}
+
+.input-search {
+  width: 30%;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  padding: 2px;
+}
+
+.input-submit {
+  margin-left: -5px;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  padding: 2px;
+  background-color: var(--green);
+  color: var(--blue);
+  width: 5%;
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid var(--white);
+  text-decoration: none;
+  color: white;
+}
+
+.slider {
+  margin-top: 10%;
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50%;
+}
+
+.slider h4 {
+  margin-top: 25%;
+}
+
+.slides {
+  display: flex;
+  width: 50rem;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 50rem;
+  border-radius: 50px;
+}
+
+.slide {
+  width: 50rem;
+  transition: 0.5s;
+}
+
+.choose_1:checked ~ .slides > .s1 {
+  margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1 {
+  margin-left: -50rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: var(--dark-blue);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: var(--white);
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06d85f;
+}
+
+.content {
+  max-height: 30%;
+  width: 50%;
+}
+
+.title-p {
+  margin-top: 5%;
+  margin-left: 60px;
+}
+
+.populer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.populer img {
+  border-radius: 10px;
+}
+
+.harga {
+  color: var(--green);
+}
+
+.link a {
+  color: var(--white);
+}
+
+.link a:hover {
+  color: var(--green);
+}
+
+.pesan {
+  background-color: var(--green);
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.pesan:hover {
+  background-color: var(--white);
+}
+
+.pesan img {
+  width: 30px;
+}
+
+.tentang {
+  display: grid;
+  width: 50rem;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10%;
+  font-size: 15pt;
+}
+
+.card {
+  background-color: var(--blue);
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 20px 20px black;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  background-color: var(--blue);
+  margin-top: 10%;
+  padding: 2%;
+}
+
+.sosmed img {
+  width: 65px;
+}
+
+#copyright {
+  text-align: center;
+  padding: 10px;
+}
+
+.title-mobile {
+  margin-top: 150px;
+  margin-left: 60px;
+}
+
+.mobile {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.mobile img {
+  border-radius: 10px;
+}
+
+.title-pc {
+  margin-top: 5%;
+  margin-left: 60px;
+}
+
+.pc {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pc img {
+  border-radius: 10px;
+}
